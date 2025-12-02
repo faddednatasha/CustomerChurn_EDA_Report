@@ -20,7 +20,7 @@ def create_synthetic_data() -> pd.DataFrame:
     # 2. Create the Pandas DataFrame
     df = pd.DataFrame(data)
     
-    # 3. Save the synthetic data to a file for use on Day 2 and beyond
+    # 3. Save the synthetic data to a file for use and beyond
     try:
         if not os.path.exists('data'):
             os.makedirs('data')
@@ -44,4 +44,3 @@ if __name__ == "__main__":
         print(raw_df.head())
         print("-" * 30)
 
-# --- End of Day 1 Code ---
