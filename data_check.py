@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-# --- Configuration (Load the data saved on Day 1) ---
+# --- Configuration (Load the data saved) ---
 FILE_PATH = 'data/synthetic_churn_data.csv' 
 
 def load_data(file_path: str) -> pd.DataFrame:
@@ -19,7 +19,7 @@ def perform_data_checks(df: pd.DataFrame):
         return
 
     print("=" * 40)
-    print("📈 DAY 2: Data Quality Check Report")
+    print("Data Quality Check Report")
     print("=" * 40)
 
     # 1. Total Rows and Columns (Shape)
@@ -54,4 +54,3 @@ if __name__ == "__main__":
     raw_df = load_data(FILE_PATH)
     perform_data_checks(raw_df)
     
-# --- End of Day 2 Code ---
