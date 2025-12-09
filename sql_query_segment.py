@@ -1,6 +1,7 @@
 import sqlite3
 import os
 
+
 # Define file paths
 DATABASE_NAME = 'customer_analytics.db'
 DB_PATH = os.path.join('data', DATABASE_NAME)
