@@ -43,7 +43,32 @@ Based on the analysis and visualizations generated, the following critical insig
 2.  **Charge Characteristics:** The average monthly charge was found to be **[Insert calculated average charge]**. The distribution analysis showed **[Insert observation, e.g., two distinct peaks in pricing tiers]**, suggesting opportunities for targeted pricing strategies.
 3.  **Customer Loyalty:** Calculation of the average customer tenure (**[Insert calculated average tenure]** months) provides a clear benchmark for evaluating the effectiveness of retention programs.
 
+## 💡 Methodology and Workflow
+
+### 1. Data Acquisition & Cleaning
+* **Source:** A synthetic dataset simulating customer information...
+* **Preparation:** Missing data was handled by **filling with the column mean** and non-numeric characters were **removed via string manipulation** to ensure data integrity.
+
+### 2. SQL Storage and Querying
+* The fully cleaned data was loaded into a local **SQLite database**.
+* **Analytical Queries** were written using `GROUP BY` and `CASE` statements to perform aggregation and **customer segmentation** (Rookie, Mid-Term, Veteran).
+
+### 3. Analysis, Visualization, and Reporting
+* **Descriptive Statistics:** Key metrics, such as the average customer **Tenure** and **Monthly Charges**, were calculated.
+* **Visualization:** A **histogram** of charges and a **bar chart** comparing contract distributions were created to support analytical findings.
+
 ***
+
+## 🎯 Key Business Insights
+
+Based on the analysis and visualizations generated, the following critical insights were derived:
+
+1.  **Dominant Contract Structure:** The **[Two year]** contract type is overwhelmingly the most popular, representing the highest stable customer value.
+2.  **Pricing and Tenure Relationship:** The **Average Monthly Charge** is **[Insert Mean MonthlyCharges]**, and a **[Insert Correlation Value]** correlation exists between tenure and charges, suggesting higher fees correlate with higher loyalty.
+3.  **Customer Loyalty Benchmark:** The average customer tenure is **[Insert Mean Tenure_Months]** months, establishing a clear benchmark for evaluating customer retention effectiveness.
+
+***
+
 
 ## 📂 Repository Contents
 
